@@ -9,6 +9,9 @@ import argparse
 random.seed(42)
 from tqdm import tqdm
 
+os.environ['CUDA_VISIBLE_DEVICES']="-1"
+
+
 import logging
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -128,7 +131,7 @@ def train(args):
         for batch in data_loader:
             
             model.train()
-            batch_gpu = [tensor.to(device) for tensor in batch]
+            batch_gpu = [tensor.long().to(device) for tensor in batch]
             loss = model(*batch_gpu)
             
             if config['fp16']:

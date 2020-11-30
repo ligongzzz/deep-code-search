@@ -1,0 +1,8 @@
+Constructing Model..
+Constructing Model..
+Constructing Model..
+epo:[1/15] itr:[0/156] step_time:3s Loss=0.40363
+Constructing Model..
+epo:[1/15] itr:[0/156] step_time:2s Loss=0.40292
+epo:[1/15] itr:[100/156] step_time:142s Loss=0.39815
+epo:[2/15] itr:[44/156] step_time:63s Loss=0.39927

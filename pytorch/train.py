@@ -280,7 +280,7 @@ def parse_args():
     # Training Arguments
     parser.add_argument('--log_every', type=int, default=100, help='interval to log autoencoder training results')
     parser.add_argument('--valid_every', type=int, default=5000, help='interval to validation')
-    parser.add_argument('--save_every', type=int, default=10000, help='interval to evaluation to concrete results')
+    parser.add_argument('--save_every', type=int, default=1000, help='interval to evaluation to concrete results')
     parser.add_argument('--seed', type=int, default=1111, help='random seed')
         
     parser.add_argument("--local_rank", type=int, default=-1, help="For distributed training: local_rank")
